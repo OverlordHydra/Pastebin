@@ -1,0 +1,3 @@
+	@commands.command(name="prefix", pass_context=True, help="")	async def check_prefix(self, ctx):
+
+		await self.bot.say("The current prefix is  {}".format(self.database.check_prefix(ctx.message.server.id)))
